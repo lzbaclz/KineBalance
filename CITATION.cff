@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use KineBalance, please cite the BIBM 2026 paper below."
+title: "KineBalance: Calibrated Outcome-Specific Screening for Multi-Endpoint Compositional Microbiome Mediation"
+type: software
+authors:
+  - family-names: Peng
+    given-names: Ruixin
+    affiliation: Imperial College London
+  - family-names: Li
+    given-names: Ziqing
+    affiliation: Huazhong University of Science and Technology
+repository-code: https://github.com/lzbaclz/KineBalance
+license: MIT
+version: 0.2.0
+date-released: 2026-10-25
+preferred-citation:
+  type: conference-paper
+  title: "KineBalance: Calibrated Outcome-Specific Screening for Multi-Endpoint Compositional Microbiome Mediation"
+  authors:
+    - family-names: Peng
+      given-names: Ruixin
+    - family-names: Li
+      given-names: Ziqing
+  collection-title: "2026 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)"
+  year: 2026
+  publisher:
+    name: IEEE

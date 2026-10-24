@@ -1,0 +1,10 @@
+# KineBalance — pinned for reproducibility. numpy MUST stay 1.26.4.
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.2
+scikit-learn==1.5.1
+statsmodels==0.14.2
+networkx==3.3
+matplotlib==3.9.2
+pyyaml==6.0.1
+pytest==7.4.4

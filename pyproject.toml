@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kinebalance"
+version = "0.2.0"
+description = "KineBalance: sparse Bayesian two-outcome compositional (microbiome) mediation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+# NumPy is pinned for ABI stability of the NumPy-only Gibbs stack; the rest float
+# within the supported range (mirrors requirements.txt).
+dependencies = [
+    "numpy==1.26.4",
+    "scipy==1.13.1",
+    "pandas==2.2.2",
+    "scikit-learn==1.5.1",
+    "statsmodels==0.14.2",
+    "networkx==3.3",
+    "matplotlib==3.9.2",
+    "pyyaml==6.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==7.4.4"]   # pinned to match requirements.txt
+
+[project.scripts]
+kinebalance = "kinebalance.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "kinebalance*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
